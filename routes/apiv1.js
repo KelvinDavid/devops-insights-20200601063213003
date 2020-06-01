@@ -10,12 +10,19 @@ var request = REQUEST.defaults( {
 var OPENWEATHERURL = "https://api.openweathermap.org/data/2.5/weather?appid=6b7b471967dd0851d0010cdecf28f829&units=imperial";
 
 exports.getWeather = function(req, res) {
-	var zip = req.query.zip;
-	if( (zip === null) || (typeof(zip) === 'undefined') ) {
-		return res.status(400).send('zip missing');
+	var cityN = req.query.cityN;
+	if( (cityN === null) || (typeof(cityN) === 'undefined') ) {
+		return res.status(400).send('city name missing');
 	}
 
-	var aurl = OPENWEATHERURL + '&zip=' + zip + ',us';
+	var aurl = OPENWEATHERURL + '&q=' + cityN + ',nz';
+	
+//	var zip = req.query.zip;
+//	if( (zip === null) || (typeof(zip) === 'undefined') ) {
+//		return res.status(400).send('zip missing');
+//	}
+//
+//	var aurl = OPENWEATHERURL + '&zip=' + zip + ',us';
 
 	request({
 		method: 'GET',
@@ -71,12 +78,18 @@ exports.getWeather2 = function(req, res) {
 router.get('/getWeather2', exports.getWeather2);
 */
 exports.getWeather3 = function(req, res) {
-	var zip = req.query.zip;
-	if( (zip === null) || (typeof(zip) === 'undefined') ) {
-		return res.status(400).send('zip missing');
+	var cityN = req.query.cityN;
+	if( (cityN === null) || (typeof(cityN) === 'undefined') ) {
+		return res.status(400).send('city name missing');
 	}
 
-	var aurl = OPENWEATHERURL + '&zip=' + zip + ',us';
+	var aurl = OPENWEATHERURL + '&q=' + cityN + ',nz';
+//	var zip = req.query.zip;
+//	if( (zip === null) || (typeof(zip) === 'undefined') ) {
+//		return res.status(400).send('zip missing');
+//	}
+//
+//	var aurl = OPENWEATHERURL + '&zip=' + zip + ',us';
 
 	request({
 		method: 'GET',
