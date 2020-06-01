@@ -5,7 +5,7 @@ function CityN(props) {
     const [validationError, setValidationError] = useState(null);
 
     const validate = (event) => {
-        const cityNPattern = //^[a-zA-Z]+$/;
+        const cityNPattern = /^[a-zA-Z]+$/;
         const valid = cityNPattern.test(event.target.value);
         if (!valid) {
             setValidationError('* should have at least 1 character which can be only lower/upper case a-z');
