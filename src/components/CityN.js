@@ -1,18 +1,18 @@
 import React, { useState } from 'react';
 
-function Zip(props) {
+function CityN(props) {
 
     const [validationError, setValidationError] = useState(null);
 
     const validate = (event) => {
-        const zipCodePattern = /^\d{5}$/;
-        const valid = zipCodePattern.test(event.target.value);
+        const cityNPattern = //^[a-zA-Z]+$/;
+        const valid = cityNPattern.test(event.target.value);
         if (!valid) {
-            setValidationError('* should be a 5 digit number only');
+            setValidationError('* should have at least 1 character which can be only lower/upper case a-z');
             props.clearResponse();
         } else {
             setValidationError('');
-            props.onZipChange(event.target.value);
+            props.onCityNChange(event.target.value);
         }
     };
 
@@ -46,4 +46,4 @@ function Zip(props) {
     );
 }
 
-export default Zip
+export default CityN
