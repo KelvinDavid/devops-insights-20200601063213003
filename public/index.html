@@ -8,6 +8,20 @@
       name="description"
       content="Web site created using create-react-app"
     />
+    <style>
+    #map {
+  		height: 100%;
+  	}
+  	#root {
+  		height: 100%
+  	}
+  	html,
+	body {
+  		height: 100%;
+  		margin: 0;
+  		padding: 0;
+	}
+    </style>
     <link rel="apple-touch-icon" href="logo192.png" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
@@ -27,17 +41,19 @@
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    <div id="root"><div id="map">
     <h1>NZ City Map #2</h1>
     <p>Select a marker to view the city's weather</p>
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script>
+    	function initMap(){
+    		var location = {lat: -37.78, lng: 175.28};
+    		var map = new google.maps.Map(document.getElementById('map'), {zoom:14, center: location});
+    	}
+    </script>
     <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAD1OQJ9GI01WPuCAvHvZrOqLYoO9RHCck&callback=initMap&libraries=&v=weekly"
-      defer
-    ></script>
-    <link rel="stylesheet" type="text/css" href="src/map.css" />
-    <script src="src/map.js"></script>
-    <div id="map"></div>
+    	async defer src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyAD1OQJ9GI01WPuCAvHvZrOqLYoO9RHCck&callback=initMap">
+    </script>
+    </div></div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
