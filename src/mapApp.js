@@ -16,7 +16,7 @@ function MapApp(){
 	return(
 		<div className="MapApp">
 			<Helmet>
-				<script src="./map.js"</script>
+				<script src="./map.js"></script>
 			</Helmet>
 		</div>
 	);
