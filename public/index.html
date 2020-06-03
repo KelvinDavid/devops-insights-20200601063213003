@@ -11,6 +11,8 @@
     <style>
     #map {
   		height: 70%;
+  		width: 70%;
+  		margin: 0 auto;
   	}
   	html,
 	body {
@@ -46,7 +48,19 @@
 	    <script>
 	    	function initMap(){
 	    		var location = {lat: -37.78, lng: 175.28};
-	    		var map = new google.maps.Map(document.getElementById('map'), {zoom:14, center: location});
+	    		var map = new google.maps.Map(document.getElementById('map'), {
+	    			zoom:4, 
+	    			center: location
+	    			});
+	    		var marker = new google.maps.Marker({
+	    			position: location,
+	    			map: map,
+	    			title: 'Hamilton'
+	    		});
+	    		marker.addListener('click', function(){
+	    			map.setZoom(8);
+	    			map.setCenter(marker.getPosition());
+	    		});
 	    	}
 	    </script>
 	    <script async defer src ="https://maps.googleapis.com/maps/api/js?key=AIzaSyAD1OQJ9GI01WPuCAvHvZrOqLYoO9RHCck&callback=initMap"></script>
