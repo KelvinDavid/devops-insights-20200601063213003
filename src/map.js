@@ -1,5 +1,6 @@
 import React from 'react';
 import './map.css';
+const google = window.google;
 
 
 function initMap(){
