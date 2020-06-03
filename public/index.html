@@ -10,10 +10,7 @@
     />
     <style>
     #map {
-  		height: 100%;
-  	}
-  	#root {
-  		height: 100%
+  		height: 70%;
   	}
   	html,
 	body {
@@ -41,9 +38,11 @@
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"><div id="map">
-	    <h1>NZ City Map #3</h1>
+    <div id="root">
+    	<h1>NZ City Map #3</h1>
 	    <p>Select a marker to view the city's weather</p>
+    </div>
+    <div id="map">
 	    <script>
 	    	function initMap(){
 	    		var location = {lat: -37.78, lng: 175.28};
@@ -51,7 +50,7 @@
 	    	}
 	    </script>
 	    <script async defer src ="https://maps.googleapis.com/maps/api/js?key=AIzaSyAD1OQJ9GI01WPuCAvHvZrOqLYoO9RHCck&callback=initMap"></script>
-    </div></div>
+    </div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
