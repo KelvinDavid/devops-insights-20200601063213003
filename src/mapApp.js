@@ -1,16 +1,14 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Map from './map.js'
-import './map.css'
+import AppHeader from './components/MapComponent';
+import MapContainer from './containers/MapContainer';
 
 function MapApp() {
   return (
-    <div className="MapApp">
-      <Map />
+    <div className="App">
+      <MapContainer />
     </div>
   );
 }
 
-
 export default MapApp;
-
