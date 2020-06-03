@@ -1,4 +1,7 @@
-export class Map extends React.Component {
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+export class MapComponent extends React.Component {
   loadMap() {
     if (this.props && this.props.google) {
       // google is available

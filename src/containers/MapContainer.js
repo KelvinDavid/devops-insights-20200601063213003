@@ -1,6 +1,6 @@
 import Map from '../components/MapComponent.js';
 
-export class Container extends React.Component {
+export class MapContainer extends React.Component {
   render() {
     const style = {
       width: '100vw',
