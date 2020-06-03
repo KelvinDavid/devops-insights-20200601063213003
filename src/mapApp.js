@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Map from './map.js'
 import './map.css'
 
-function mapApp() {
+function MapApp() {
   return (
     <div className="mapApp">
       <Map />
