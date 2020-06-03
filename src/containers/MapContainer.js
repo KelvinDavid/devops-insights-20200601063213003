@@ -18,5 +18,5 @@ export class MapContainer extends React.Component {
 }
 
 export default MapContainer({
-  apiKey: AIzaSyAD1OQJ9GI01WPuCAvHvZrOqLYoO9RHCck
+  apiKey: 'AIzaSyAD1OQJ9GI01WPuCAvHvZrOqLYoO9RHCck'
 })(MapContainer)
