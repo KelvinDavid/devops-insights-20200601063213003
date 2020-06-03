@@ -21,3 +21,5 @@ export class Map extends React.Component {
     // ...
   }
 }
+
+export default MapComponent
