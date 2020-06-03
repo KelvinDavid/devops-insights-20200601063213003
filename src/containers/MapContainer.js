@@ -1,3 +1,5 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
 import Map from '../components/MapComponent.js';
 
 export class MapContainer extends React.Component {
@@ -17,4 +19,4 @@ export class MapContainer extends React.Component {
 
 export default MapContainer({
   apiKey: AIzaSyAD1OQJ9GI01WPuCAvHvZrOqLYoO9RHCck
-})(Container)
+})(MapContainer)
