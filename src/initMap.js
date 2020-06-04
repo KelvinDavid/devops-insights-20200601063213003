@@ -35,7 +35,15 @@ class InitMap extends Component {
               map.setCenter({ lat: -37.787003, lng: 175.279251 })
               const MarkerCity = "Hamilton";
               <div>
+<<<<<<< HEAD
               	<AppContainer = { MarkerCity }/>
+=======
+<<<<<<< HEAD
+              	<AppContainer = { MarkerCity }/>
+=======
+              	<AppContainer=(MarkerCity)/>
+>>>>>>> 77b4d5ae274eef93c2c736232d39c248735ad67a
+>>>>>>> 77b4d5ae274eef93c2c736232d39c248735ad67a
               </div>
           })
         }}
