@@ -4,7 +4,7 @@ import CityNResponse from '../components/CityNResponse';
 import CityN from '../components/CityN';
 
 function AppContainer(props) {
-
+	console.log(`--------- propData called: ${props}`)
     const [responseData, setResponseData] = useState('');
     
     const handleCityNChange = async (cityNValue) => {
