@@ -5,7 +5,7 @@ import InitalMap from '../components/Map.js';
 
 export default class MapContainer extends Component
 {
-	function MapContainer(props)
+	function MapCon(props)
 	{
 		this.state={
 			markers:[{
