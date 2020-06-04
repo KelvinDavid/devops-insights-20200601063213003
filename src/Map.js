@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+//import React, { useState } from 'react';
 //import Component from 'react';
 import fetch from 'isomorphic-unfetch';
 //import InitalMap from '../components/Map.js';
@@ -117,6 +117,7 @@ class Map extends Component {
 }
 
 export default Map
+
   
 //export default MapContainer
 
