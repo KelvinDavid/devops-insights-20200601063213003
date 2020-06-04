@@ -4,8 +4,8 @@ import './index.css';
 import App from './App';
 import Map from './Map';
 
-ReactDOM.render(<Map />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));
 
-//ReactDOM.render(<Map />, document.getElementById('map'));
+ReactDOM.render(<Map />, document.getElementById('map'));
 
 

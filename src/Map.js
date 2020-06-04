@@ -111,7 +111,7 @@ class Map extends Component {
 
   render() {
     return (
-      <div style={{ width: 500, height: 500 }} id="map" />
+      <div style={{ width: 500, height: 500,  }} id="map" />
     );
   }
 }
