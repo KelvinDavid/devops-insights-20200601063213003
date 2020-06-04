@@ -3,7 +3,7 @@ import fetch from 'isomorphic-unfetch'
 import CityNResponse from '../components/CityNResponse';
 import CityN from '../components/CityN';
 
-function AppContainer(props) {
+export function AppContainer(props) {
 	console.log(`--------- propData called: ${props}`)
     const [responseData, setResponseData] = useState('');
     
