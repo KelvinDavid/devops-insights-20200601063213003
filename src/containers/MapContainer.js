@@ -3,9 +3,7 @@ import Component from 'react';
 import fetch from 'isomorphic-unfetch';
 import InitalMap from '../components/Map.js';
 
-export default class MapContainer extends Component
-{
-	function MapCon(props)
+	function MapContainer(props)
 	{
 		this.state={
 			markers:[{
@@ -28,7 +26,6 @@ export default class MapContainer extends Component
 			</div>
 		);
 	}
-}
 
   
 export default MapContainer
