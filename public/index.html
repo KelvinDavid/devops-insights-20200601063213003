@@ -9,22 +9,6 @@
       content="Web site created using create-react-app"
     />
     <!--
-    <style>
-    #map {
-  	height: 70%;
-  	width: 70%;
-  	margin: 0 auto;
-  	}
-	html,
-	body {
-  	height: 100%;
-  	margin: 0;
-  	padding: 0;
-	}
-    </style>
-    <link href="src/map.css" rel="stylesheet" type="text/css">
-    -->
-    <!--
     <link rel="apple-touch-icon" href="logo192.png" />
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -42,6 +26,7 @@
     <title>Demo DOI</title>
   </head>
   <body>
+  	<script src ="https://maps.googleapis.com/maps/api/js?key=AIzaSyAD1OQJ9GI01WPuCAvHvZrOqLYoO9RHCck&callback=initMap"></script>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root">
     	<!--
@@ -50,28 +35,6 @@
 	    -->
     </div>
     <div id="map">
-    	<!--
-	    <script>
-	    	function initMap(){
-	    		var location = {lat: -37.78, lng: 175.28};
-	    		var map = new google.maps.Map(document.getElementById('map'), {
-	    			zoom:4, 
-	    			center: location
-	    			});
-	    		var marker = new google.maps.Marker({
-	    			position: location,
-	    			map: map,
-	    			title: 'Hamilton'
-	    		});
-	    		marker.addListener('click', function(){
-	    			map.setZoom(8);
-	    			map.setCenter(marker.getPosition());
-	    		});
-	    	}
-	    </script>
-	    -->
-		
-	    <script src ="https://maps.googleapis.com/maps/api/js?key=AIzaSyAD1OQJ9GI01WPuCAvHvZrOqLYoO9RHCck&callback=initMap"></script>
 	   
     </div>
     <!--
