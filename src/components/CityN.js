@@ -30,7 +30,7 @@ function CityN(props) {
                         type="text" 
                         className="form-control" 
                         id="usr" 
-                        placeholder="US Zip Code (5 digit)"
+                        placeholder="Enter NZ City"
                         onKeyPress={(event) => {
                             if (event.key === "Enter") {
                                 validate(event);

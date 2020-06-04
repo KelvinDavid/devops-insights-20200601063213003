@@ -2,7 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import AppHeader from './components/AppHeader';
 import AppContainer from './containers/AppContainer';
-import Map from './map';
+import InitMap from './InitMap';
 import './App.css';
 
 
@@ -11,7 +11,7 @@ function App() {
     <div className="App">
       <AppHeader />
       <AppContainer />
-      <Map />
+      <InitMap />
     </div>
   );
 }
