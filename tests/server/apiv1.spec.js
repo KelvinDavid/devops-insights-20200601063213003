@@ -38,7 +38,7 @@ describe('Get Weather', function() {
   it('with valid city name and error from request call', function() {
     reqMock = {
       query: {
-        city: 'Hamilton'
+        cityN: 'Hamilton'
       }
     };
 
@@ -57,7 +57,7 @@ describe('Get Weather', function() {
   it('with incomplete city name', function() {
     reqMock = {
       query: {
-        city: 'Hamil'
+        cityN: 'Hamil'
       }
     };
 
