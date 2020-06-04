@@ -35,4 +35,5 @@ function AppContainer(props) {
     );
 }
   
+module.export = handleCityNChange
 export default AppContainer

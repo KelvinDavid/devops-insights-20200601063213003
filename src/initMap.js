@@ -21,9 +21,18 @@ class InitMap extends Component {
             map: map,
             title: 'Hamilton Weather'
           });
+	        map.addListener('center_changed', function() {
+	          // 3 seconds after the center of the map has changed, pan back to the
+	          // marker.
+	          window.setTimeout(function() {
+	            map.panTo(marker.getPosition());
+	          }, 3000);
+	        });
           marker.addListener('click', e => {
               map.setZoom(9)
               map.setCenter({ lat: -37.787003, lng: 175.279251 })
+              var WeatherHandler = require("./containers/AppContainer.js")
+              WeatherHandler.handleCityNChange("Hamilton")
           })
         }}
       />
