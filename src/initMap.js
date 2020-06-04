@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
-import Map from './map'
+import Map from './map.js'
+const AppContainer = require('./containers/AppContainer.js');
 
 class InitMap extends Component {
   constructor() {
@@ -31,8 +32,7 @@ class InitMap extends Component {
           marker.addListener('click', e => {
               map.setZoom(9)
               map.setCenter({ lat: -37.787003, lng: 175.279251 })
-              var WeatherHandler = require("./containers/AppContainer.js")
-              WeatherHandler.handleCityNChange("Hamilton")
+              AppContainer.AppContainer("Hamilton")
           })
         }}
       />
