@@ -2,7 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import AppHeader from './components/AppHeader';
 import AppContainer from './containers/AppContainer';
-import InitMap from './InitMap';
+import InitMap from './initMap';
 import './App.css';
 
 
