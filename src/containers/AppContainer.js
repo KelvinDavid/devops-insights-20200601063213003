@@ -35,5 +35,5 @@ export function AppContainer(props) {
     );
 }
 
-
+export const handleCityNChange = () => {}
 export default AppContainer

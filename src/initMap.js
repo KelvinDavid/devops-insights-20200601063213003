@@ -2,7 +2,10 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
 import Map from './map.js';
-import {AppContainer} from './containers/AppContainer.js';
+import AppContainer from './containers/AppContainer.js';
+import {handleCityNChange} from './containers/AppContainer.js';
+
+
 const MarkerCity = "Hamilton";
 
 class InitMap extends Component {
@@ -34,7 +37,9 @@ class InitMap extends Component {
           marker.addListener('click', e => {
               map.setZoom(9)
               map.setCenter({ lat: -37.787003, lng: 175.279251 })
-              AppContainer(MarkerCity)
+              //AppContainer(MarkerCity)
+              AppContainer.handleCityNChange(MarkerCity);
+              
           })
         }}
       />
