@@ -1,6 +1,4 @@
 import React from 'react';
-import Map from '../map.js';
-import InitMap from '../initMap.js';
 
 function CityNResponse(props) {
 
