@@ -35,7 +35,7 @@ export function AppContainer(props) {
     );
 }
 
-export function showWeather = (cityNValue) => {
+export showWeather = (cityNValue) => {
 	    	return (
 	        <div>
 	            <div className="row mt-4">
