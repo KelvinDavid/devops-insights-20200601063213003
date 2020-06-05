@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import AppHeader from './components/AppHeader';
 import AppContainer from './containers/AppContainer';
 import './App.css';
+import InitMap from './initMap.js'
 
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
     <div className="App">
       <AppHeader />
       <AppContainer />
+      <InitMap />
     </div>
   );
 }
