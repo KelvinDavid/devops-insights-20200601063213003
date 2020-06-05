@@ -1,4 +1,3 @@
-///*eslint-disable no-unreachable */
 //import React, { Component } from 'react';
 //import { render } from 'react-dom';
 //import Map from './map.js';
