@@ -1,4 +1,6 @@
 import React from 'react';
+import Map from '../map.js';
+import InitMap from '../initMap.js';
 
 function CityNResponse(props) {
 
@@ -51,6 +53,11 @@ function CityNResponse(props) {
                     </tbody>
                 </table>
             </div>
+            var marker = new window.google.maps.Marker ({
+            	position: {lat: {props.responseData.coord.lat}, lng: {props.responseData.coord.lon},
+            	map: "myMap"
+            	title: {props.responseData.name}
+            })
         )
     }
     return null
