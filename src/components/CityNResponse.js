@@ -53,7 +53,6 @@ function CityNResponse(props) {
                     </tbody>
                 </table>
             </div>
-            })
         )
     }
     return null
