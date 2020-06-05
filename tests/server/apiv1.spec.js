@@ -22,7 +22,21 @@ sinon.spy(resMock, "send");
 
 
 describe('Get Weather', function() {
-
+	
+	/*
+  it('with valid city name', function(){
+  	reqMock = {
+  		query{
+  			cityN: 'Hamilton'
+  		}
+  	}
+  	
+  	apiv1.getWeather(reqMock, resMock);
+  	
+  	assert(resMock.status.lastCall.calledWith(200), 'Unexpected status code:' + resMock.status.lastCall.args);
+  })
+  */
+	
   it('without city name', function() {
     reqMock = {
       query: {
