@@ -37,9 +37,42 @@ class InitMap extends Component {
           marker.addListener('click', e => {
               map.setZoom(9)
               map.setCenter({ lat: -37.787003, lng: 175.279251 })
+              const res = await fetch(`https://api.openweathermap.org/data/2.5/weather?appid=6b7b471967dd0851d0010cdecf28f829&units=metric&q=${MarkerCity},nz`)
+        	  const json = await res.json()
               return(
               	<div>
-              	<AppContainer cityNValue="Hamilton"/>
+	                <table className="table table-info table-hover marker">
+	                    <tbody>
+	                        <tr>
+	                            <td>City</td>
+	                            <td>{json.name}</td>
+	                        </tr>
+	                        <tr>
+	                            <td>Temperature</td>
+	                            <td>{json.main.temp}</td>
+	                        </tr>
+	                        <tr>
+	                            <td>Pressure</td>
+	                            <td>{json.main.pressure}</td>
+	                        </tr>
+	                        <tr>
+	                            <td>Humidity</td>
+	                            <td>{json.main.humidity}</td>
+	                        </tr>
+	                        <tr>
+	                            <td>Temperature (Min)</td>
+	                            <td>{json.main.temp_min}</td>
+	                        </tr>
+	                        <tr>
+	                            <td>Temperature (Max)</td>
+	                            <td>{json.main.temp_max}</td>
+	                        </tr>
+	                        <tr>
+	                            <td>Conditions</td>
+	                            <td>{json.weather[0].description}</td>
+	                        </tr>
+	                    </tbody>
+	                </table>
               	</div>
               );
           })
