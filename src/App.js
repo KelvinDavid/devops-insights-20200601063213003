@@ -11,7 +11,7 @@ function App() {
     <div className="App">
       <AppHeader />
       <AppContainer />
-      <InitMap />
+      //<InitMap />
     </div>
   );
 }
