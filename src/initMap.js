@@ -5,19 +5,13 @@ import Map from './map.js';
 import AppContainer from './containers/AppContainer.js';
 import CityNResponse from './components/CityNResponse';
 import CityN from './components/CityN';
-
-
-
 const MarkerCity = "Hamilton";
 
 class InitMap extends Component {
   constructor() {
     super();
   }
-  
-  displayMarkerWeather(cityN){
-  	
-  }
+ 
 
   render() {
     return (
@@ -42,8 +36,12 @@ class InitMap extends Component {
 	        });
           marker.addListener('click', e => {
               map.setZoom(9)
-              map.setCenter({ lat: -37.787003, lng: 175.279251 })   
-              CityN.validate(MarkerWeather)
+              map.setCenter({ lat: -37.787003, lng: 175.279251 })
+              return(
+              	<div>
+              	<AppContainer cityNValue="Hamilton"/>
+              	</div>
+              );
           })
         }}
       />
