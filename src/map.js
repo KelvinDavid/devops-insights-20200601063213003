@@ -19,7 +19,7 @@ class Map extends Component {
       this.props.options);
     this.props.onMapLoad(map)
   }
-
+  
   componentDidMount() {
     if (!window.google) {
       var s = document.createElement('script');

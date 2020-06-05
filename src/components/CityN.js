@@ -6,7 +6,7 @@ function CityN(props) {
 
     const validate = (event) => {
     	
-        const cityNPattern = /^[a-zA-Z]+$/;
+        const cityNPattern = /^[a-zA-Z]+(?:[\s][a-zA-Z]+)*$/;
         const valid = cityNPattern.test(event.target.value);
         console.log(`--------- EventData called: ${event}`);
         console.log(`--------- EventDataValue called: ${event.target.value}`);

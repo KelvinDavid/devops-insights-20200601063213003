@@ -34,21 +34,4 @@ export function AppContainer(props) {
         </div>
     );
 }
-
-export showWeather = (cityNValue) => {
-	    	return (
-	        <div>
-	            <div className="row mt-4">
-	                <div className="col-sm-4"></div>
-	                <CityN onCityNChange={handleCityNChange} clearResponse={clearResponse}/>
-	                <div className="col-sm-4"></div>
-	            </div>
-	            <div className="row mt-4">
-	                <div className="col-sm-2"></div>
-	                <CityNResponse responseData={responseData} clearResponse={clearResponse}/>
-	                <div className="col-sm-2"></div>
-	            </div>    
-        </div>
-    	);
-}
 export default AppContainer
